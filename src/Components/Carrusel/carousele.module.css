@@ -1,0 +1,53 @@
+.carousel {
+  width: 100%;
+  height: 500px;
+}
+.carouselBack {
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+  
+}
+.h3{
+  display: flex;
+justify-content: center;
+align-items: center;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.546);
+  border-radius: 24px;
+  backdrop-filter: blur(6px);
+width: 50%;
+
+}
+@media screen and (max-width: 864px) {
+  .carousel {
+    width: 100%;
+    height: 700px;
+  }
+}
+@media screen and (max-width: 604px) {
+  .carousel {
+    width: 100%;
+    height: 400px;
+  }
+  .carouselBack {
+    background-color: rgba(0, 0, 0, 0.546);
+    backdrop-filter: blur(6px);
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+  .carouselBack h2 {
+    font-size: 15px;
+  }
+  .carouselBack h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .carouselBack h4 {
+    font-size: 16px;
+  }
+}
+.c {
+  color: #0000009a;
+}
