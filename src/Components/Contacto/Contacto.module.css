@@ -1,0 +1,45 @@
+.Container {
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Box {
+  border: solid 1px rgb(83, 55, 3);
+  position: relative;
+  height: 75%;
+  width: 90%;
+  background-color: #ede0d4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.BoxTitulo {
+  border-radius: 10px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(251, 237, 211);
+}
+.Titulo {
+  font-size: 18px;
+  font-family: "Vollkorn", serif;
+  margin: 0;
+  padding: 0;
+}
+.Linea {
+  position: absolute;
+  top: 140px;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(83, 55, 3);
+}
+.ContainerCards {
+}

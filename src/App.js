@@ -1,20 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
- import { CarouselContainer } from './Components/Carrusel/CarouselContainer';
-import { BurgerMenu } from './Components/BurgerMenu/BurgerMenu';
- 
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { CarouselContainer } from "./Components/Carrusel/CarouselContainer";
+import { BurgerMenu } from "./Components/BurgerMenu/BurgerMenu";
+import { AppRouter } from "./Components/routers/AppRouter";
 
 function App() {
-
-
-
   return (
-      <div>
-        <BurgerMenu/>
-      <CarouselContainer/>
-        <p>asdasdasdas</p>
-        <p>asdasdasdas</p>
-  </div>
+    <div>
+      <AppRouter />
+    </div>
   );
 }
 

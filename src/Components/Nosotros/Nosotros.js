@@ -1,11 +1,11 @@
 import React from "react";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 
-export const HacerNegocios = () => {
+export const Nosotros = () => {
   return (
     <div>
       <BurgerMenu />
-      <h1>Hacer Negocios con mi caital</h1>
+      <p>Hi</p>
     </div>
   );
 };

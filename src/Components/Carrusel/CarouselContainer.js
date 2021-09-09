@@ -7,37 +7,44 @@ import school from "../Img/img2.jpg";
 import vol from "../Img/img6.png";
 import conv from "../Img/img7.jpg";
 import aca from "../Img/img5.jpg";
+import { Link } from "react-router-dom";
 
 export const CarouselContainer = () => {
   return (
     <Carousel className={styled.carousel}>
       <Carousel.Item interval={3000}>
-        <img  className={styled.carousel} src={school} alt="Third slide" />
+        <img className={styled.carousel} src={school} alt="Third slide" />
         <Carousel.Caption className={styled.carouselBack}>
           <h3 className={styled.h3}>
-            <a >
-              English for primary and secondary school.
-            </a>
+            <Link to="/#">English for primary and secondary school.</Link>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className={styled.carousel} interval={3000}>
-        <img sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px," className={styled.carousel} src={engineer} alt="First slide" />
+        <img
+          sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,"
+          className={styled.carousel}
+          src={engineer}
+          alt="First slide"
+        />
         <Carousel.Caption className={styled.carouselBack}>
           <h3 className={styled.h3}>
-            <a >
-              English for aircraft engineers and mechanics.
-            </a>
+            <Link to="/#">English for aircraft engineers and mechanics.</Link>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-        <img sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px," className={styled.carousel} src={vol} alt="Second slide" />
+        <img
+          sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,"
+          className={styled.carousel}
+          src={vol}
+          alt="Second slide"
+        />
         <Carousel.Caption className={styled.carouselBack}>
           <h3 className={styled.h3}>
-            <a >English for UN volunteers.</a>
+            <Link to="/#">English for UN volunteers.</Link>
           </h3>
         </Carousel.Caption>
       </Carousel.Item>
@@ -45,19 +52,22 @@ export const CarouselContainer = () => {
         <img className={styled.carousel} src={conv} alt="Third slide" />
         <Carousel.Caption className={styled.carouselBack}>
           <h3 className={styled.h3}>
-            <a >Conversation course.</a>
+            <Link to="/#">Conversation course.</Link>
           </h3>
-          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-        <img sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px," className={styled.carousel} src={aca} alt="Third slide" />
+        <img
+          sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,"
+          className={styled.carousel}
+          src={aca}
+          alt="Third slide"
+        />
         <Carousel.Caption className={styled.carouselBack}>
           <h3 className={styled.h3}>
-            <a>English for academic purposes.</a>
+            <Link to="/#">English for academic purposes.</Link>
           </h3>
-          
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

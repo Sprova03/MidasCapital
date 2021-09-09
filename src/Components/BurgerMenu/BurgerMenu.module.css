@@ -1,49 +1,106 @@
 .NavLink {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-family: 'Vollkorn', serif; 
-  }
-.NavBar{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: "Vollkorn", serif;
+}
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  height: 90px;
+  width: 100%;
+  z-index: 1000;
+}
+.NavBar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.NavBar nav ul li {
+  display: inline-block;
+  margin: 10px;
+  transition: 0.4s;
+}
+.NavLink:hover {
+  color: rgb(255, 255, 255);
+  border-bottom: solid 5px #61b82e;
+
+  text-decoration: none;
+}
+.NavBar .MobileNavigation {
+  display: none;
+}
+@media (max-width: 1350px) {
+  .NavBar {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.555);
-    height: 80px;
-    width: 100%;
-    z-index: 1000;
+    justify-content: flex-end;
+  }
+  .NavBar nav {
+    margin-right: 100px;
+  }
 }
-.NavBar nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.NavBar nav ul li{
-    display: inline-block;
-    margin: 20px;
-    transition: 5s;
-}
-.NavLink:hover{
-    color: rgb(255, 255, 255);
-    border-bottom: solid 5px #61b82e;
-   
-    text-decoration: none;
-}
-.NavBar .MobileNavigation{
+@media (max-width: 990px) {
+  .NavBar .Navigation {
     display: none;
+  }
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+    height: 90px;
+  }
+  .NavBar .MobileNavigation .Burger {
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+  }
+  .NavBar nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 100%;
+    background: #4140404d;
+    backdrop-filter: blur(6px);
+  }
+
+  .NavBar nav ul li {
+    padding-left: 15%;
+  }
+
+  .NavBar {
+    opacity: 1;
+  }
+
+  .NavBar a:hover {
+    border-bottom: none;
+    color: rgb(21, 142, 21);
+  }
 }
-@media (max-width: 990px){
-    .NavBar .Navigation{
-        display: none;
-    }
-    .NavBar .MobileNavigation{
-        background-color: orange;
-       display: flex;
-       align-items: center;
-    }
-    .NavBar .MobileNavigation .Burger{
-       position: absolute;
-       right: 5%;
-    }
+.Logo {
+  height: 90px;
+  width: 300px;
+  font-family: "Allison", cursive;
+
+  color: rgb(255, 255, 255);
+
+  font-size: 50px;
+
+  position: absolute;
+
+  left: 2%;
+
+  font-weight: bolder;
+}
+
+.LogoImg {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+
+  left: 5%;
 }
