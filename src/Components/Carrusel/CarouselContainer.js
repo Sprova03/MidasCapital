@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 export const CarouselContainer = () => {
   return (
-    <Carousel className={styled.carousel}>
+    <Carousel className={`${styled.carousel} "${styled.carouselbg}`}>
       <Carousel.Item interval={3000}>
         <img className={styled.carousel} src={school} alt="Third slide" />
         <Carousel.Caption className={styled.carouselBack}>

@@ -7,6 +7,12 @@ export const InicioScreen = () => {
     <>
       <BurgerMenu />
       <CarouselContainer />
+      <div>
+        <div>Cryptos</div>
+        <div>Btc: 45k</div>
+        <div>Eth: 45k</div>
+        <div>Ada: 45k</div>
+      </div>
     </>
   );
 };

@@ -1,7 +1,7 @@
 .NavLink {
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 18.5px;
   font-family: "Vollkorn", serif;
 }
 .NavBar {
@@ -21,12 +21,13 @@
 }
 .NavBar nav ul li {
   display: inline-block;
-  margin: 10px;
+  margin: 70px;
   transition: 0.4s;
 }
 .NavLink:hover {
+  transition: 3s;
   color: rgb(255, 255, 255);
-  border-bottom: solid 5px #61b82e;
+  border-bottom: solid 2px #ffffff;
 
   text-decoration: none;
 }
@@ -34,6 +35,11 @@
   display: none;
 }
 @media (max-width: 1350px) {
+  .NavBar nav ul li {
+    display: inline-block;
+    margin: 10px;
+    transition: 0.4s;
+  }
   .NavBar {
     display: flex;
     justify-content: flex-end;
@@ -81,26 +87,15 @@
   }
 }
 .Logo {
-  height: 90px;
-  width: 300px;
   font-family: "Allison", cursive;
 
   color: rgb(255, 255, 255);
 
   font-size: 50px;
 
-  position: absolute;
-
-  left: 2%;
-
   font-weight: bolder;
 }
-
 .LogoImg {
-  height: 100%;
-  width: 100%;
-
-  position: absolute;
-
-  left: 5%;
+  height: 90px;
+  width: 300px;
 }

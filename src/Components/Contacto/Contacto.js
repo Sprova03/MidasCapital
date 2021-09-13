@@ -11,12 +11,9 @@ export const Contacto = () => {
       <div className={style.Container}>
         <div className={style.Box}>
           <div className={style.BoxTitulo}>
-            <h1 className={style.Titulo}>
-              {" "}
-              Contactanos en cualquier momento.{" "}
-            </h1>
-            <div className={style.Linea}></div>
+            <h1 className={style.Titulo}>Contactanos en nuestras Redes.</h1>
           </div>
+          <div className={style.Linea}></div>
           <div className={style.ContainerCards}>
             <Cards2 />
           </div>
