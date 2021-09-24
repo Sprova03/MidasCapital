@@ -1,0 +1,20 @@
+.Container {
+  width: 80%;
+  margin-top: 150px;
+  position: relative;
+}
+
+.ContainerInput {
+  display: flex;
+  justify-content: center;
+}
+.Input {
+  opacity: 0.7;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.Input:focus {
+  opacity: 1;
+  width: 50%;
+  margin-bottom: 30px;
+}

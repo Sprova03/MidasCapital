@@ -11,65 +11,53 @@ import { Link } from "react-router-dom";
 
 export const CarouselContainer = () => {
   return (
-    <Carousel className={`${styled.carousel} "${styled.carouselbg}`}>
-      <Carousel.Item interval={3000}>
-        <img className={styled.carousel} src={school} alt="Third slide" />
-        <Carousel.Caption className={styled.carouselBack}>
-          <h3 className={styled.h3}>
-            <Link to="/#">English for primary and secondary school.</Link>
-          </h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item className={styled.carousel} interval={3000}>
-        <img
-          sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,"
-          className={styled.carousel}
-          src={engineer}
-          alt="First slide"
-        />
-        <Carousel.Caption className={styled.carouselBack}>
-          <h3 className={styled.h3}>
-            <Link to="/#">English for aircraft engineers and mechanics.</Link>
-          </h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
-        <img
-          sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,"
-          className={styled.carousel}
-          src={vol}
-          alt="Second slide"
-        />
-        <Carousel.Caption className={styled.carouselBack}>
-          <h3 className={styled.h3}>
-            <Link to="/#">English for UN volunteers.</Link>
-          </h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
-        <img className={styled.carousel} src={conv} alt="Third slide" />
-        <Carousel.Caption className={styled.carouselBack}>
-          <h3 className={styled.h3}>
-            <Link to="/#">Conversation course.</Link>
-          </h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={3000}>
-        <img
-          sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,"
-          className={styled.carousel}
-          src={aca}
-          alt="Third slide"
-        />
-        <Carousel.Caption className={styled.carouselBack}>
-          <h3 className={styled.h3}>
-            <Link to="/#">English for academic purposes.</Link>
-          </h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <div className={styled.Contenedor}>
+      <Carousel>
+        <Carousel.Item className={styled.carousel} interval={3000}>
+          <img className={styled.carouselImg} src={school} alt="Third slide" />
+          <Carousel.Caption className={styled.carouselBack}>
+            <h3 className={styled.h3}>
+              <Link to="/#">English for primary and secondary school.</Link>
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className={styled.carousel} interval={3000}>
+          <img
+            className={styled.carouselImg}
+            src={engineer}
+            alt="First slide"
+          />
+          <Carousel.Caption className={styled.carouselBack}>
+            <h3 className={styled.h3}>
+              <Link to="/#">English for aircraft engineers and mechanics.</Link>
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className={styled.carousel} interval={3000}>
+          <img className={styled.carouselImg} src={vol} alt="Second slide" />
+          <Carousel.Caption className={styled.carouselBack}>
+            <h3 className={styled.h3}>
+              <Link to="/#">English for UN volunteers.</Link>
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item className={styled.carousel} interval={3000}>
+          <img className={styled.carouselImg} src={conv} alt="Third slide" />
+          <Carousel.Caption className={styled.carouselBack}>
+            <h3 className={styled.h3}>
+              <Link to="/#">Conversation course.</Link>
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item interval={3000} className={styled.carousel}>
+          <img className={styled.carouselImg} src={aca} alt="Third slide" />
+          <Carousel.Caption className={styled.carouselBack}>
+            <h3 className={styled.h3}>
+              <Link to="/#">English for academic purposes.</Link>
+            </h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 };

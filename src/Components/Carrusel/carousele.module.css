@@ -1,10 +1,24 @@
+.Contenedor {
+  z-index: 10;
+  height: 350px;
+  position: relative;
+  top: 105px;
+  width: 75%;
+  -webkit-box-shadow: 10px 10px 25px -0px #4d6ea3;
+  -moz-box-shadow: 10px 10px 25px -0px #4d6ea3;
+  box-shadow: 10px 10px 25px -0px #4d6ea3;
+  border-radius: 5px;
+}
 .carousel {
   position: relative;
-  top: 45px;
   width: 100%;
-  height: 850px;
+  height: 350px;
+  border-radius: 5px;
 }
-.carouselbg {
+.carouselImg {
+  border-radius: 5px;
+  width: 100%;
+  height: 350px;
 }
 .carouselBack {
   display: flex;
@@ -16,21 +30,30 @@
   justify-content: center;
   align-items: center;
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.546);
+
+  width: 70%;
+}
+.carouselBack {
   border-radius: 24px;
+  background-color: rgba(0, 0, 0, 0.546);
   backdrop-filter: blur(6px);
-  width: 50%;
+  margin: 0;
+  padding: 0 0 10px 0;
 }
-@media screen and (max-width: 864px) {
-  .carousel {
+
+@media (max-width: 704px) {
+  .Contenedor {
+    position: relative;
+    top: 105px;
     width: 100%;
-    height: 700px;
   }
-}
-@media screen and (max-width: 604px) {
   .carousel {
     width: 100%;
-    height: 400px;
+    height: 300px;
+  }
+  .carouselImg {
+    width: 100%;
+    height: 300px;
   }
   .carouselBack {
     background-color: rgba(0, 0, 0, 0.546);
@@ -38,8 +61,8 @@
     margin: 0;
     padding: 0 0 10px 0;
   }
-  .carouselBack h2 {
-    font-size: 15px;
+  .carouselBack h3 {
+    font-size: 18px;
   }
   .carouselBack h1 {
     font-size: 18px;

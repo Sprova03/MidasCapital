@@ -1,10 +1,9 @@
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 50px;
   width: 50px;
   background-size: 100%, 100%;
-  background-color: rgba(0, 0, 0, 0.244);
+  background-color: rgba(0, 0, 0, 0.459);
   backdrop-filter: blur(10px);
   background-image: none;
 }
@@ -20,4 +19,3 @@
   font-size: 40px;
   color: rgb(255, 255, 255);
 }
-

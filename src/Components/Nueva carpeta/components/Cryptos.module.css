@@ -1,0 +1,40 @@
+.ContainerTodo {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ContainerCrypos {
+  height: 250px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Container {
+  height: 250px;
+  width: 100%;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+}
+.CryptoCard {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.603);
+  border-radius: 10px;
+}
+
+.ImgCry {
+  width: 50px;
+  height: 50px;
+}
