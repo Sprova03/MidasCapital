@@ -1,7 +1,7 @@
 .NavLink {
   text-decoration: none;
   color: #fdfdfd;
-  font-size: 18.5px;
+  font-size: 20.5px;
   font-family: "Vollkorn", serif;
   position: relative;
 }
@@ -15,11 +15,24 @@
   align-items: center;
   position: fixed;
   backdrop-filter: blur(6px);
-  background-color: #193157a4;
+  background-color: #000000;
   height: 90px;
   width: 100%;
   z-index: 1000;
+  transition: 2s;
 }
+.NavBarInvi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+  background-color: #00000033;
+  height: 90px;
+  width: 100%;
+  z-index: 1000;
+  transition: 2s;
+}
+
 .NavBar nav ul {
   list-style: none;
   margin: 0;
@@ -58,6 +71,7 @@
   font-weight: bolder;
 }
 ul li {
+  cursor: pointer;
   position: relative;
 }
 .NavLink::before {
@@ -146,11 +160,18 @@ ul li {
     top: 90px;
     left: 0;
     width: 70%;
-    background: #4140404d;
+    background: #00000094;
     backdrop-filter: blur(6px);
+    border-radius: 0 0 10px 0;
   }
 
   .NavBar {
     opacity: 1;
+  }
+  @media (max-width: 400px) {
+    .LogoImg {
+      height: 80px;
+      width: 200px;
+    }
   }
 }

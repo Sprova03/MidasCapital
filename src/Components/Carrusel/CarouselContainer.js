@@ -4,7 +4,7 @@ import styled from "./carousele.module.css";
 import "./carousel.css";
 import engineer from "../Img/img1.jpg";
 import school from "../Img/img2.jpg";
-import vol from "../Img/img6.png";
+import vol from "../Img/img3.jpg";
 import conv from "../Img/img7.jpg";
 import aca from "../Img/img5.jpg";
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ export const CarouselContainer = () => {
           <img className={styled.carouselImg} src={school} alt="Third slide" />
           <Carousel.Caption className={styled.carouselBack}>
             <h3 className={styled.h3}>
-              <Link to="/#">English for primary and secondary school.</Link>
+              <Link to="/">Somos el camino necesitabas.</Link>
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
@@ -29,7 +29,7 @@ export const CarouselContainer = () => {
           />
           <Carousel.Caption className={styled.carouselBack}>
             <h3 className={styled.h3}>
-              <Link to="/#">English for aircraft engineers and mechanics.</Link>
+              <Link to="/#">Impulsa tu capital desde donde estés.</Link>
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
@@ -37,7 +37,7 @@ export const CarouselContainer = () => {
           <img className={styled.carouselImg} src={vol} alt="Second slide" />
           <Carousel.Caption className={styled.carouselBack}>
             <h3 className={styled.h3}>
-              <Link to="/#">English for UN volunteers.</Link>
+              <Link to="/#">Nuestro compromiso es tu futuro.</Link>
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
@@ -45,7 +45,9 @@ export const CarouselContainer = () => {
           <img className={styled.carouselImg} src={conv} alt="Third slide" />
           <Carousel.Caption className={styled.carouselBack}>
             <h3 className={styled.h3}>
-              <Link to="/#">Conversation course.</Link>
+              <Link to="/#">
+                Traslada tu negocio a cualquier parte del mundo.
+              </Link>
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
@@ -53,7 +55,7 @@ export const CarouselContainer = () => {
           <img className={styled.carouselImg} src={aca} alt="Third slide" />
           <Carousel.Caption className={styled.carouselBack}>
             <h3 className={styled.h3}>
-              <Link to="/#">English for academic purposes.</Link>
+              <Link to="/#">Que no existan limites para tus proyectos.</Link>
             </h3>
           </Carousel.Caption>
         </Carousel.Item>

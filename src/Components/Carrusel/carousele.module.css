@@ -1,6 +1,9 @@
+a {
+  color: white;
+}
 .Contenedor {
   z-index: 10;
-  height: 350px;
+  height: 450px;
   position: relative;
   top: 105px;
   width: 75%;
@@ -8,17 +11,18 @@
   -moz-box-shadow: 10px 10px 25px -0px #4d6ea3;
   box-shadow: 10px 10px 25px -0px #4d6ea3;
   border-radius: 5px;
+  border: solid 0.5px black;
 }
 .carousel {
   position: relative;
   width: 100%;
-  height: 350px;
+  height: 450px;
   border-radius: 5px;
 }
 .carouselImg {
   border-radius: 5px;
   width: 100%;
-  height: 350px;
+  height: 100%;
 }
 .carouselBack {
   display: flex;
@@ -43,6 +47,7 @@
 
 @media (max-width: 704px) {
   .Contenedor {
+    height: 300px;
     position: relative;
     top: 105px;
     width: 100%;

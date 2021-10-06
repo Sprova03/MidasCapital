@@ -1,3 +1,6 @@
+* {
+  list-style: none;
+}
 .App {
   text-align: center;
   text-decoration: none;
@@ -35,7 +38,7 @@
     position: fixed !important;
     z-index: 16000160 !important;
     bottom: 21px;
-    right: 23px;
+    right: 10px;
     opacity: 1;
     height: 50px;
     width: 50px;

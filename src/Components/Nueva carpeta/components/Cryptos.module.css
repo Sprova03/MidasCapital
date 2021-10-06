@@ -1,29 +1,30 @@
 .ContainerTodo {
-  height: 250px;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .ContainerCrypos {
-  height: 250px;
+  height: 100%;
   width: 100%;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .Container {
-  height: 250px;
+  height: 200px;
   width: 100%;
   margin: 30px;
   display: flex;
   align-items: center;
 }
 .CryptoCard {
-  height: 150px;
+  height: 200px;
   width: 100%;
+  padding: 0 40px;
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -35,6 +36,92 @@
 }
 
 .ImgCry {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+}
+@media (max-width: 1600px) {
+  .ContainerTodo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ContainerCrypos {
+    position: relative;
+    left: -30px;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .Container {
+    width: 100%;
+    margin: 30px 100px 30px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .CryptoCard {
+    width: 100%;
+    display: flex;
+    padding: 0 0;
+    margin: 0 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+  }
+
+  .ImgCry {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 1600px) {
+  .ContainerTodo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ContainerCrypos {
+    position: relative;
+    left: -30px;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .Container {
+    width: 100%;
+    margin: 30px 100px 30px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .CryptoCard {
+    width: 100%;
+    display: flex;
+    padding: 0 0;
+    margin: 0 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.603);
+    border-radius: 10px;
+  }
+
+  .ImgCry {
+    width: 50px;
+    height: 50px;
+  }
 }

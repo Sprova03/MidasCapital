@@ -2,6 +2,7 @@ import React from "react";
 import style from "./BurgerMenu.module.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Link as LinkSmooth } from "react-scroll";
 
 export const NavLinks = (props) => {
   const animateFrom = { opacity: 0, y: -40 };
@@ -54,9 +55,14 @@ export const NavLinks = (props) => {
           transition={{ delay: 0.5 }}
           onClick={() => props.isMobile && props.closeMobileMenu()}
         >
-          <Link className={style.NavLink} to="/contacto">
+          <LinkSmooth
+            smooth={true}
+            duration={2000}
+            className={style.NavLink}
+            to="Contacto"
+          >
             Contacto
-          </Link>
+          </LinkSmooth>
         </motion.li>
       </ul>
     </div>

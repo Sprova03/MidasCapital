@@ -1,9 +1,30 @@
 .Container {
   display: flex;
-  text-align: center;
+  position: relative;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 70px 0;
+  height: 250px;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+.Logo {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 100px;
+  width: 300px;
+}
+.LogoImg {
+  height: 100px;
+  width: 300px;
+}
+.Box {
+  display: flex;
   justify-content: space-around;
   padding-top: 75px;
-  height: 300px;
+  height: 250px;
   width: 100%;
   color: white;
   background-color: black;
@@ -16,14 +37,64 @@
   height: 40px;
 }
 .BoxLinks1 {
+  margin: 10px;
   color: rgb(28, 28, 184);
 }
 .BoxLinks1:hover {
   color: rgb(0, 0, 255);
 }
 .BoxLinks2 {
+  margin: 10px;
   color: rgb(5, 119, 39);
 }
 .BoxLinks2:hover {
   color: rgb(10, 185, 63);
+}
+.BoxLinks3 {
+  color: rgb(0, 166, 196);
+}
+.BoxLinks3:hover {
+  color: rgb(0, 217, 255);
+}
+.LitaElementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+@media (max-width: 700px) {
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 100px;
+    width: 300px;
+  }
+  .LogoImg {
+    height: 100px;
+    width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .Logo {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    height: 80px;
+    width: 200px;
+  }
+  .LogoImg {
+    height: 80px;
+    width: 200px;
+  }
+  .Box {
+    display: flex;
+
+    flex-direction: column;
+    padding-top: 75px;
+    height: 250px;
+    width: 100%;
+    color: white;
+    background-color: black;
+  }
 }
